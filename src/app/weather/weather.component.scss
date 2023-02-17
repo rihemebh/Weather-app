@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 
 .wrapper {
+  overflow :hidden;
   background-image: url("../../assets/bg.png");
   background-size: repeat;
-  height: 100vh !important;
+  min-height: 100vh !important;
   background-position: center;
   min-width: 90vW;
   max-width: 100vW;
@@ -42,7 +43,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 90vh;
+  //  height: 90vh;
 
     .form {
       margin-top: 2rem;
@@ -115,18 +116,18 @@
   }
 
   .date-buttons{
-    width: 500px;
+    width: 40%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     .isClicked{
       background: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(10px);
     }
     button{
+      margin-right: 1vw;
       height: 40px;
       cursor: pointer;
-      
       color: white;
       background: rgba(255, 255, 255, 0.2);
       backdrop-filter: blur(10px);
@@ -149,25 +150,23 @@
     height: 3vh;
   }
 
-
-
-
-
-
-/********************/
-
-  
+ 
   .time-weather{
+
+    margin-bottom: 1vh;
 
     display: flex;
     flex-direction: row;
     max-width: 100vw;
-   
+
     .hour-clicked{
       background: rgba(0, 0, 0, 0.4) !important;
         backdrop-filter: blur(16px);
     }
+
+
     .card{
+      min-width: 50px;
       display: flex;
       padding-top: 1rem;
       padding-bottom: 1rem;
@@ -178,7 +177,7 @@
       margin: 5px;
       width: 100px;
       color: white;
-      height: 70px;
+      height: 60px;
       background: rgba(0, 0, 0, 0.17);
       border-radius: 8px;
       backdrop-filter: blur(16px);
@@ -197,6 +196,23 @@
       }
     }
 
+
+  }
+
+  
+@media only screen and (max-width: 700px) {
+
+  .time-weather{
+    overflow-x: auto;
+  }
+  
+  .date-buttons{
+    width: 100%;
+  }
+
+  input{
+    width: 100%;
+  }
 
   }
 

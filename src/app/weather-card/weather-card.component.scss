@@ -1,11 +1,12 @@
 .card {
+ 
       
     background: rgba(0, 0, 0, 0.17);
     backdrop-filter: blur(16px);
     color: white;
     font-family: "Poppins", sans-serif;
-    height:400px ;
-    width: 404px;
+    height:370px ;
+    width: 380px;
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
@@ -17,6 +18,7 @@
     -ms-border-radius: 38px;
     -o-border-radius: 38px;
   }
+
 
   
   .card-content-wrapper{
@@ -36,8 +38,10 @@
         margin: 2px;
         
         .city{
-          font-size:22px;
+          font-size:32px;
+          line-height: 1 !important;
           font-weight: 900;
+          padding-bottom: 2px;
         }
         .date{
           font-size:12px;
@@ -112,3 +116,35 @@
     height: 3vh;
   }
 
+  @media only screen and (max-width: 900px) {
+    .title{
+      .text{
+        .city{
+          font-size:  4vw;
+    
+         }
+      }
+      
+    }
+  }
+  @media only screen and (max-width: 700px) {
+
+    .card{
+    // width: 100%;
+ 
+     padding: 0 !important;
+    }
+    
+    .divider{
+      height: 1vh;
+    }
+  
+    .title{
+      .text{
+        .city{
+          font-size:  4vw !important
+         }
+      }
+      
+    }
+    }

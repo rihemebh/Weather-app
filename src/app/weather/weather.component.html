@@ -24,13 +24,16 @@
       <button [ngClass]="{ 'isClicked' : tomorrow}" (click)="onChangeDay(2)">Tomorrow</button>
       <button [ngClass]="{ 'isClicked' : afterTomorrow}" (click)="onChangeDay(3)">After Tomorrow</button></div>
     <div class="divider"></div>
+
     <div class="time-weather">
+
       <div class="card" [ngClass]="{'hour-clicked' : hour.isClicked == true}" *ngFor="let hour of hours; let i = index"  (click)="onClick(hour, i)">
         <div class="time">{{hour.time_short}}</div>
         <div class="icon"><img src="{{hour.condition.icon}}" width="35" /></div>
         <div class="temperature"> {{hour.temp_c}}<img src="/../../assets/celsus.png" class="pow" width="10"/></div>
       </div>
     </div>
+
   </div>
 </div>
 
