@@ -1,0 +1,32 @@
+<div class="card">
+    <div  class="card-content-wrapper" *ngIf="loading"> Loading ...</div>
+    <div *ngIf="errorMessage != ''">{{errorMessage}}</div>
+    <div class="card-content-wrapper" *ngIf="!loading && errorMessage == ''">
+      <div class="title">
+        <div class="photo">
+          <img src="{{currentWeather.condition.icon}}" />
+        </div>
+        <div class="text">
+          <div class="city">{{location}}</div>
+          <div class="date">{{time}}</div>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="card-body">
+        <span class="temperature"> {{currentWeather.temp_c}}  <img src="/../../assets/celsus.png" class="pow" width="25"/></span> 
+        <span  class="condition"> {{currentWeather.condition.text}}</span>
+      </div>
+      <div class="divider"></div>
+      <div class="card-footer">
+        <div class="side-footer">
+          <div class="element"><span><img src="/../../assets/temp-icon.png" class="pow" width="12"/> Feels </span> <span>{{currentWeather.feelslike_c}} C</span> </div> <br/>
+          <div class="element"><span><img src="/../../assets/humidity.png" class="pow" width="12"/> Humidity </span> <span>{{currentWeather.humidity}} %</span></div>
+          <div class="element"></div>
+        </div>
+        <div class="side-footer">
+          <div class="element"><span><img src="/../../assets/other.png" class="pow" width="12"/> Cloud </span> <span>{{currentWeather.cloud}} %</span></div> <br/>
+          <div class="element"><span><img src="/../../assets/wind.png" class="pow" width="12"/> Wind  </span> {{currentWeather.wind_kph}}<span class="smaller">Kph</span></div>
+        </div>
+      </div>
+    </div>
+  </div>

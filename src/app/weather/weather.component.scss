@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+
+.wrapper {
+  background-image: url("../../assets/bg.png");
+  background-size: repeat;
+  height: 100vh !important;
+  background-position: center;
+  min-width: 90vW;
+  max-width: 100vW;
+  overflow-x: visible;
+  .mat-toolbar-row,
+  .mat-toolbar-single-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    .nav-bar {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .logo {
+      font-size: 17px;
+      color: white;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+      img {
+        margin-right: 5px;
+        margin-left: 5px;
+        height: 44px;
+      }
+    }
+  }
+
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 90vh;
+
+    .form {
+      margin-top: 2rem;
+      .search-form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      display: flex;
+      flex-direction: row;
+      background: rgba(0, 0, 0, 0.17);
+      backdrop-filter: blur(16px);
+      color: white;
+      border: none;
+      padding-left: 15px;
+      border-radius: 44px !important;
+      -webkit-border-radius: 44px !important;
+      -moz-border-radius: 44px !important;
+      -ms-border-radius: 44px !important;
+      -o-border-radius: 44px !important;
+      .img-wrapper {
+        border: none !important;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(10px);
+        width: 38px;
+        height: 38px;
+        margin-right: 20px;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -o-border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      input {
+        background-color: transparent;
+        border: none;
+        border-radius: 44px !important;
+        -webkit-border-radius: 44px !important;
+        -moz-border-radius: 44px !important;
+        -ms-border-radius: 44px !important;
+        -o-border-radius: 44px !important;
+        height: 50px;
+        width: 30vw;
+        color: white;
+        margin-left: 5px;
+
+        &:focus {
+          border: none !important;
+          outline: none;
+        }
+
+        &:focus-visible {
+          border: none !important;
+          outline: none;
+        }
+        &:active {
+          border: none !important;
+          outline: none;
+        }
+      }
+    }
+
+  
+  
+  }
+
+  .date-buttons{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .isClicked{
+      background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+    }
+    button{
+      height: 40px;
+      cursor: pointer;
+      
+      color: white;
+      background: rgba(255, 255, 255, 0.2);
+      backdrop-filter: blur(10px);
+      border: none;
+      width: 120px;
+      border-radius:  20px   ;
+      -webkit-border-radius:  20px   ;
+      -moz-border-radius:  20px   ;
+      -ms-border-radius:  20px   ;
+      -o-border-radius:  20px   ;
+
+      &:hover{
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(10px);
+      }
+}
+  }
+
+  .divider{
+    height: 3vh;
+  }
+
+
+
+
+
+
+/********************/
+
+  
+  .time-weather{
+
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw;
+   
+    .hour-clicked{
+      background: rgba(0, 0, 0, 0.4) !important;
+        backdrop-filter: blur(16px);
+    }
+    .card{
+      display: flex;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      justify-content: space-around;
+      margin: 5px;
+      width: 100px;
+      color: white;
+      height: 70px;
+      background: rgba(0, 0, 0, 0.17);
+      border-radius: 8px;
+      backdrop-filter: blur(16px);
+      -webkit-border-radius: 8px;
+      -moz-border-radius: 8px;
+      -ms-border-radius: 8px;
+      -o-border-radius: 8px;
+      .temperature{
+        font-weight: 500;
+      }
+
+      &:hover{
+        background: rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(16px);
+        cursor: pointer;
+      }
+    }
+
+
+  }
+
+
+}
+
+
+.smaller{
+  font-size: 9px;
+}
+input:autofill,
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active, input:-internal-autofill-selected {
+   
+  background-color: rgba(0, 0, 0, 0.17) !important;
+  backdrop-filter: blur(16px) !important;
+}

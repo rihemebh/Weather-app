@@ -1,0 +1,36 @@
+<div class="wrapper">
+  <mat-toolbar class="nav-bar">
+    <div class="logo">
+      <img src="../../assets/logo.png" /><span>Synapse Weather</span>
+    </div>
+  </mat-toolbar>
+
+  <div class="body">
+    <div class="form">
+      <form class="search-form" #form="ngForm" (ngSubmit)="onSubmit(form)">
+     
+        <input matInput placeholder="Search..."  class="formcontrol"  name="city" id="city" [value]="cityName" #city ngModel />
+        <button class="img-wrapper">
+          <img type="submit" src="../../assets/search.png" width="15" />
+        </button>
+      </form>
+    </div>
+    <div class="divider"></div>
+
+    <app-weather-card [location]="location" [time]="time " [currentWeather]="currentWeather" [loading]="loading" [errorMessage]="errorText" />
+    <div class="divider"></div>
+    <div class="date-buttons">
+      <button [ngClass]="{ 'isClicked' : today}" (click)="onChangeDay(1)">Today</button>
+      <button [ngClass]="{ 'isClicked' : tomorrow}" (click)="onChangeDay(2)">Tomorrow</button>
+      <button [ngClass]="{ 'isClicked' : afterTomorrow}" (click)="onChangeDay(3)">After Tomorrow</button></div>
+    <div class="divider"></div>
+    <div class="time-weather">
+      <div class="card" [ngClass]="{'hour-clicked' : hour.isClicked == true}" *ngFor="let hour of hours; let i = index"  (click)="onClick(hour, i)">
+        <div class="time">{{hour.time_short}}</div>
+        <div class="icon"><img src="{{hour.condition.icon}}" width="35" /></div>
+        <div class="temperature"> {{hour.temp_c}}<img src="/../../assets/celsus.png" class="pow" width="10"/></div>
+      </div>
+    </div>
+  </div>
+</div>
+
