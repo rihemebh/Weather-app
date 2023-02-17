@@ -31,11 +31,6 @@ import { FormsModule }   from '@angular/forms';
     MatGridListModule,
     MatInputModule,
     FormsModule
-
-
-     
-  
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
