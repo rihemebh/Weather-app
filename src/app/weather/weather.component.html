@@ -13,8 +13,11 @@
         <button class="img-wrapper">
           <img type="submit" src="../../assets/search.png" width="15" />
         </button>
+
       </form>
+    
     </div>
+   <a (click)="useLocation(form)" class="location-link "><mat-icon aria-hidden="false"  fontIcon="person_pin_circle"></mat-icon> <span> Use my location</span> </a>
     <div class="divider"></div>
 
     <app-weather-card [location]="location" [time]="time " [currentWeather]="currentWeather" [loading]="loading" [errorMessage]="errorText" />

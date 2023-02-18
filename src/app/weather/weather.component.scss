@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
 
 .wrapper {
-  overflow :hidden;
+  overflow: hidden;
   background-image: url("../../assets/bg.png");
   background-size: repeat;
   min-height: 100vh !important;
   background-position: center;
-  min-width: 90vW;
-  max-width: 100vW;
+  min-width: 90vw;
+  max-width: 100vw;
   overflow-x: visible;
   .mat-toolbar-row,
   .mat-toolbar-single-row {
@@ -108,21 +108,18 @@
         }
       }
     }
-
-  
-  
   }
 
-  .date-buttons{
+  .date-buttons {
     width: 40%;
     display: flex;
     flex-direction: row;
     justify-content: center;
-    .isClicked{
+    .isClicked {
       background: rgba(255, 255, 255, 0.5);
-        backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
     }
-    button{
+    button {
       margin-right: 1vw;
       margin-left: 1vw;
       height: 40px;
@@ -132,39 +129,36 @@
       backdrop-filter: blur(10px);
       border: none;
       width: 120px;
-      border-radius:  20px   ;
-      -webkit-border-radius:  20px   ;
-      -moz-border-radius:  20px   ;
-      -ms-border-radius:  20px   ;
-      -o-border-radius:  20px   ;
+      border-radius: 20px;
+      -webkit-border-radius: 20px;
+      -moz-border-radius: 20px;
+      -ms-border-radius: 20px;
+      -o-border-radius: 20px;
 
-      &:hover{
+      &:hover {
         background: rgba(255, 255, 255, 0.5);
         backdrop-filter: blur(10px);
       }
-}
+    }
   }
 
-  .divider{
+  .divider {
     height: 3vh;
   }
 
- 
-  .time-weather{
-
+  .time-weather {
     margin-bottom: 1vh;
 
     display: flex;
     flex-direction: row;
     max-width: 100vw;
 
-    .hour-clicked{
+    .hour-clicked {
       background: rgba(0, 0, 0, 0.4) !important;
-        backdrop-filter: blur(16px);
+      backdrop-filter: blur(16px);
     }
 
-
-    .card{
+    .card {
       min-width: 50px;
       display: flex;
       padding-top: 1rem;
@@ -184,50 +178,52 @@
       -moz-border-radius: 8px;
       -ms-border-radius: 8px;
       -o-border-radius: 8px;
-      .temperature{
+      .temperature {
         font-weight: 500;
       }
 
-      &:hover{
+      &:hover {
         background: rgba(0, 0, 0, 0.4);
         backdrop-filter: blur(16px);
         cursor: pointer;
       }
     }
-
-
   }
 
-  
-@media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 700px) {
+    .time-weather {
+      overflow-x: auto;
+    }
 
-  .time-weather{
-    overflow-x: auto;
+    .date-buttons {
+      width: 100%;
+    }
+
+    input {
+      min-width: 38vw !important;
+    }
   }
-  
-  .date-buttons{
-    width: 100%;
-  }
-
-  input{
-    min-width: 38vw !important;
-  }
-
-  }
-
-
 }
 
-
-.smaller{
+.smaller {
   font-size: 9px;
 }
-input:autofill,
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active, input:-internal-autofill-selected {
-   
-  background-color: rgba(0, 0, 0, 0.17) !important;
-  backdrop-filter: blur(16px) !important;
+
+
+.location-link {
+  cursor: pointer;
+  color: white;
+
+  height: 22px;
+  .mat-icon {
+    padding-top: 1vh;
+    height: auto;
+    font-size: 14px !important;
+    width: auto;
+  }
+
+  span {
+    font-size: 12px !important;
+    line-height: 1;
+  }
 }

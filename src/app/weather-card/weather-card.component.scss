@@ -1,104 +1,98 @@
 .card {
-    padding: 1%;
-    background: rgba(0, 0, 0, 0.17);
-    backdrop-filter: blur(16px);
-    color: white;
-    font-family: "Poppins", sans-serif;
-    height:auto ;
-    width: 380px;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 38px;
-    -webkit-border-radius: 38px;
-    -moz-border-radius: 38px;
-    -ms-border-radius: 38px;
-    -o-border-radius: 38px;
-  }
-  
-  .card-content-wrapper{
+  padding: 1%;
+  background: rgba(0, 0, 0, 0.17);
+  backdrop-filter: blur(16px);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  height: auto;
+  min-height: 371px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 38px;
+  -webkit-border-radius: 38px;
+  -moz-border-radius: 38px;
+  -ms-border-radius: 38px;
+  -o-border-radius: 38px;
+
+  .card-content-wrapper {
     display: flex;
     flex-direction: column;
 
     align-items: center;
     justify-content: space-around;
-    .title{
+    .title {
       display: flex;
       flex-direction: row;
       align-items: center;
       margin-top: 2vh;
       justify-content: center;
-      .text{
+      .text {
         margin: 2px;
-        
-        .city{
-          font-size:22px;
+
+        .city {
+          font-size: 22px;
           line-height: 1 !important;
           font-weight: 900;
           padding-bottom: 2px;
         }
-        .date{
-          font-size:12px;
+        .date {
+          font-size: 12px;
         }
       }
-      .photo{
+      .photo {
         margin-right: 8px;
-        img{
+        img {
           width: 90px;
         }
-
       }
     }
 
-    .card-body{
+    .card-body {
       height: 20vh;
-     margin-top: 3vh;
-
+      margin-top: 3vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      
-      .temperature{
-       height: 80px;
-       position: relative;
-      
+
+      .temperature {
+        height: 80px;
+        position: relative;
+
         font-size: 120px;
         font-weight: 900;
 
-        .pow{
+        .pow {
           position: absolute;
-          top:-50px;
-  
+          top: -50px;
         }
-
       }
 
-      .condition{
+      .condition {
         font-size: 20px;
-       // height: 1vh;
       }
     }
 
-    .card-footer{
+    .card-footer {
       margin-bottom: 2vh;
       display: flex;
       width: 260px;
       flex-direction: row;
       justify-content: space-between;
 
-      .side-footer{
-     
-        .element{
+      .side-footer {
+        .element {
           display: flex;
           width: 100px;
           font-size: 12px;
           flex-direction: row;
           align-items: center;
           justify-content: space-between;
-          span{
+          span {
             margin-left: 1px;
           }
         }
@@ -106,47 +100,25 @@
     }
   }
 
-
-  
-  .divider{
+  .divider {
     height: 3vh;
   }
 
-  @media only screen and (max-width: 900px) {
-   /* .title{
-      .text{
-        .city{
-          font-size:  4vw;
-    
-         }
-      }
-      
-    }*/
-  }
   @media only screen and (max-width: 700px) {
-
-    .card{
-    width: auto;
-    min-width : 50vw;
-     padding: 0 !important;
+    .card {
+      width: auto;
+      min-width: 50vw;
+      padding: 0 !important;
     }
-    
-    .divider{
+
+    .divider {
       height: 1vh;
     }
-  
-  /*  .title{
-      .text{
-        .city{
-          font-size:  4vw !important
-         }
-      }
-      
-    }*/
 
-    .card-footer{
-        width: 48vh;
-        margin-right: 2vh;
-        margin-left: 2vh;
+    .card-footer {
+      width: 48vh;
+      margin-right: 2vh;
+      margin-left: 2vh;
     }
-    }
+  }
+}
