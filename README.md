@@ -1,6 +1,6 @@
 # Weather App Overview
 
-A simple weather application developed with Angular 14.
+A simple weather application developed with Angular 15.
 
 For the UI I used 
   - Angular Material
