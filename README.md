@@ -28,7 +28,7 @@ I used the forcast api from [weatherapi.com](https://www.weatherapi.com/)
 
 ## How to test it 
 
-- clone the project 
-- ng serve 
+- Clone the project 
+- Run ``ng serve`` 
 
 Happy Testing !
