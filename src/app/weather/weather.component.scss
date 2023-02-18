@@ -43,8 +43,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-  //  height: 90vh;
-
     .form {
       margin-top: 2rem;
       .search-form {
@@ -126,6 +124,7 @@
     }
     button{
       margin-right: 1vw;
+      margin-left: 1vw;
       height: 40px;
       cursor: pointer;
       color: white;
@@ -211,7 +210,7 @@
   }
 
   input{
-    width: 100%;
+    min-width: 38vw !important;
   }
 
   }
