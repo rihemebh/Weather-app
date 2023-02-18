@@ -20,11 +20,12 @@ I used the forcast api from [weatherapi.com](https://www.weatherapi.com/)
 
 - By clicking on "use my location" the app will delete the city stored and use his location again.
 
-- The application could provide the forcast of 3 days
+- The application could provide the forcast of 3 days.
 
-- The main card has the current weather and you can find the weather by time bellow
-- When you click on one of the small card it will show you the details of the  weather at the selected time.
-- You can check the weather of the 2 next days by clicking on the buttons " Tomorrow, After Tomorrow"
+- The main card has the current weather.
+- The small cards has the weather by time.
+- When you click on one of the small cards it will show you the details of the weather at the selected time.
+- You can check the weather of the 2 next days by clicking on the buttons " Tomorrow"" and "After Tomorrow"
 
 ## How to test it 
 
